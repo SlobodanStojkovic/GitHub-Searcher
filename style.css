@@ -1,5 +1,8 @@
 body {
-    background-color: skyblue;
+    background-color: rgb(10, 10, 10);
+    background-image: url(./assets/GitHub\ Searcher.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -7,8 +10,9 @@ body {
     margin-top: 100px;
 }
 
-h1 {
+.logo {
     margin-left: 11%;
+    color: white;
 }
 
 input {
@@ -22,6 +26,7 @@ input {
     background: url("./assets/icons8-search-50.png") no-repeat 3px 3px; /* 3px 3px is icon padding */
     background-size: 20px;  /* size of the icon */
     padding-left: 30px;  /* this moves input inner text from left edge so that icon can fit there */
+    color: white;
 }
 
 .gallery {
