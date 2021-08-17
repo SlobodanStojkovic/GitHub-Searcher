@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Hub Searcher Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="logo">GitHubSearcher</h1>
+        <label>
+            <input id="search" placeholder="Search for user" type="text">
+        </label>
+
+        <div class="gallery">
+
+        </div>
+
+        <h1 class="newPageH1" hidden>List of repositories for <span id="userName"></span></h1>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+Create a page that contains a logo and a search box (as shown on the mock)
+The page is initially empty (there are no listed users)
+The user can input some text in the search box
+When the user clicks enter, a request is sent using jQuery Ajax API
+The request is sent to GitHub’s endpoint for searching users
+Documentation can be found at https://developer.github.com/v3
+Try to find URL and structure of a request for searching users
+When a response is received, print an image and a username on the page for all the
+users in the response
+
+Part II
+Build upon previous part of exercise (GitHubSearcher) and add additional features.
+
+Each user in the list is clickable.
+When user clicked new content (or new page) is presented.
+Show all github repositories of selected user (in list of grid).
+When showing repository you should present:
+● Repository name
+● Repository image, or some placeholder if there is no picture
+● Description
+● Number of start
+API documentation for GitHub repositories: https://developer.github.com/v3/repos/
+Extra:
+For each repository show used languages on that repository
+-->
