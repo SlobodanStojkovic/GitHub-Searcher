@@ -18,6 +18,8 @@ body {
 .newPageH1 {
     color: white;
     margin-left: 11%;
+    width: 100%;
+    background-color: rgb(1, 6, 27);
 }
 
 input {
@@ -54,12 +56,10 @@ input {
     border: 1px solid white;
 }
 
-a {
+.userLink {
     display: block;
     margin: 0;
     padding: 0;
-    background-color:dimgrey;
-    border: 1px solid white;
 }
 
 .usernameP {

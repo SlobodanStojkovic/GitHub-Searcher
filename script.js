@@ -12,11 +12,11 @@ function getUserDetails() {
         localStorage.setItem("1", $person);
     }
 
-    $("a").click(getUserOnClick);
+    $(".userLink").click(getUserOnClick);
 
     $("img").click(getUserOnClick);
 
-    $("a").click(newPage);
+    $(".userLink").click(newPage);
 }
 
 $search.keypress(function (event) {
@@ -29,7 +29,7 @@ $search.keypress(function (event) {
         var searchUsersEndpoint = "https://api.github.com/search/users?q=" + $person;
 
         $newPageH1.attr("hidden", true);
-        $(".dataTable").attr("hidden", true);
+        $(".dataTable").remove();
 
         searchUsersRequest.open("GET", searchUsersEndpoint);
 
@@ -49,15 +49,17 @@ $search.keypress(function (event) {
                     var userImg = searchedUsers[i].avatar_url;
                     var username = searchedUsers[i].login;
 
-                    var $a = $("<a>");
-                    $a.addClass("userLink");
-                    $a.text(username);
+                    var $div = $("<div>");
+                    $div.addClass("userLink");
+                    var $p = $("<p>");
+                    $p.text(username);
+                    $p.appendTo($div);
 
                     var $img = document.createElement("img");
                     $img.setAttribute("src", userImg);
-                    $a.prepend($img);
+                    $div.prepend($img);
 
-                    userDiv.append($a[0]);
+                    userDiv.append($div[0]);
 
                     $search.val("");    //this will after we click for search clear input field
                 }
