@@ -15,6 +15,11 @@ body {
     color: white;
 }
 
+.newPageH1 {
+    color: white;
+    margin-left: 11%;
+}
+
 input {
     position: absolute;
     right: 10%;
@@ -32,6 +37,7 @@ input {
 .gallery {
     margin-right: 10px;
     margin-left: 145px;
+    color: white;
 }
 
 .users {
@@ -45,12 +51,15 @@ input {
 .gallery img {
     width: 460px;
     height: 460px;
+    border: 1px solid white;
 }
 
 a {
     display: block;
     margin: 0;
     padding: 0;
+    background-color:dimgrey;
+    border: 1px solid white;
 }
 
 .usernameP {
@@ -60,22 +69,24 @@ a {
 }
 
 #userName {
-    color: white;
+    color: aqua;
 }
 
 table {
-    border: 3px solid black;
+    border: 3px solid white;
     margin-left: 11%;
     width: 89%;
     margin-bottom: 5%;
+    color: white;
+    background-color: black;
 }
 
 th {
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 td {
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 @media (max-width: 1550px) {
